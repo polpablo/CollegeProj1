@@ -1,0 +1,156 @@
+﻿@model CarRentals.Models.Company
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Company</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyWebsite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyWebsite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyFacebook)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyFacebook)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyTwitter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyTwitter)
+        </dd>
+
+    </dl>
+    <table class="table">
+        <tr>
+            <th>
+                Car Type
+            </th>
+            <th>
+                VehicleName
+            </th>
+            <th>
+                Location
+            </th>
+            <th>
+                Country of Manufactor
+            </th>
+            <th>
+                Seats
+            </th>
+            <th>
+                Exterior Colour
+            </th>
+            <th>
+                Interior Colour
+            </th>
+            <th>
+                Condition
+            </th>
+            <th>
+                Available
+            </th>
+            <th>
+                Convertible
+            </th>
+            <th>
+                Addition Info
+            </th>
+        </tr>
+
+        @foreach (var item in Model.Cars)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CarType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VehicleName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Location)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CountryOfMan)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Seats)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExColour)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InColour)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Condition)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Available)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Convertible)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AddInfo)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.CarID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.CarID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.CarID })
+                </td>
+              
+            </tr>
+        }
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CompanyID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
