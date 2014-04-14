@@ -1,4 +1,7 @@
-﻿body {
+﻿@import "reset.css";
+@import "bootstrap.min.css";
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
