@@ -9,7 +9,11 @@
 
 </head>
 <body>
+   
+
     <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="logo"></div>
+
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -17,7 +21,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
+
+                
+
+                @Html.ActionLink("Index", "Home", null, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -29,11 +36,51 @@
             </div>
         </div>
     </div>
+    <nav>
+        <div id="w">
+
+            <ul id="nav" class="nav">
+                <li>
+                    <a href="#">VEHICLES</a>
+                    <ul>
+                        <li><a href="/cars/wedding">WEDDING</a></li>
+                        <li><a href="/cars/classic">CLASSIC</a></li>
+                        <li><a href="/cars/tvandmovie">TV/MOVIE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">GALLERY</a>
+                    <ul>
+                        <li><a href="/gallery">GALLERY</a></li>
+                        <li><a href="/testimonials">TESTIMONIALS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="dontfollow" href="#" rel="nofollow">INFO</a>
+                    <ul>
+                        <li><a href="/articles">ABOUT</a></li>
+                        <li><a href="/forums">CONTACT</a></li>
+                        <li><a href="/about">SUPPORT</a></li>
+                        <li><a href="/about">AFFILIATES</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">NEWSLETTER</a>
+                    <ul>
+                        <li><a href="#">SIGNUP</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>This is the footer</p>
         </footer>
     </div>
 
