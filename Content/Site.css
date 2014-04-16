@@ -22,9 +22,46 @@ font-style: normal;
     height:116px;
     }
 
-    .top-navbar ul {
-    list-style:none;
-    
+ .navlinks{
+    width:500px;
+    height:30px;
+    position:absolute;
+    top:50px;
+    right:-90px;
+    }
+
+  .navlinks ul {
+    width:500px;
+    height:30px;
+    }
+
+  .navlinks ul li {
+    list-style-type:none;
+    display:inline;
+    font-family:ROADWAY_;
+    font-size:2em;
+    color:#fff;
+    margin-right: 10px;
+    }
+
+ .navlinks a:link{
+    text-decoration:none;
+    color:#fff;
+    }
+
+ .navlinks a:visited{
+    text-decoration:none;
+    color:#fff;
+    }
+
+ .navlinks a:hover{
+    text-decoration:none;
+    color:#fff;
+    }
+
+ .navlinks a:active{
+    text-decoration:none;
+    color:#fff;
     }
 
 
