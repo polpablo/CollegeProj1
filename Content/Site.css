@@ -26,20 +26,58 @@ font-style: normal;
 
 /*/////////////////// top navbar ///////////////////////////////*/
 
+.logo{
+  position:absolute;
+  background:url("/images/CarportalWHT.png");
+  background-size: 100%;
+  background-repeat:no-repeat;
+	display:block;
+	left: 20px; 
+	top: 54px;
+	text-indent:-9999px;
+	width:390px;
+	height:100px;
+	z-index:100;
+}
+
+.logo a{
+  background:url("/images/CarportalWHT.png");
+	background-repeat:no-repeat;
+	position:absolute;
+	display:block;
+	width:10%;
+	height:10%;
+	z-index:10;
+}
+
+.general {
+position:absolute;
+  background:url("/images/GeneralLee.png");
+  background-size: 107%;
+  background-repeat:no-repeat;
+	display:block;
+	right: 20px; 
+	top: -48px;
+	text-indent:-9999px;
+	width:390px;
+	height:200px;
+	z-index:100;
+}
+
 .top-navbar{
-    background-color:#000;
+    background-color:#801212;
     color:#fff;
     position:absolute;
     width:1277px;
-    height:116px;
+    height:150px;
     }
 
  .navlinks{
     width:500px;
     height:30px;
     position:absolute;
-    top:50px;
-    right:-90px;
+    top:89px;
+    right:180px;
     }
 
   .navlinks ul {
@@ -79,33 +117,7 @@ font-style: normal;
 
 /*/////////////////// top navbar end ///////////////////////////////*/
 
-/*/////////////////// logo and jquery navbar ////////////////////*/
-
-
-
-.logo{
-  position:absolute;
-  background:url("/images/CarportalWHT.png");
-  background-size: 100%;
-  background-repeat:no-repeat;
-	display:block;
-	left: 20px; 
-	top: 20px;
-	text-indent:-9999px;
-	width:390px;
-	height:100px;
-	z-index:100;
-}
-
-.logo a{
-  background:url("/images/CarportalWHT.png");
-	background-repeat:no-repeat;
-	position:absolute;
-	display:block;
-	width:10%;
-	height:10%;
-	z-index:10;
-}
+/*/////////////////// jquery navbar ////////////////////*/
 
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -184,7 +196,7 @@ strong { font-weight: bold; }
   background: #E8E8E8;
 }
 
-/*/////////////////// logo and jquery navbar end ////////////////////*/
+/*/////////////////// jquery navbar end ////////////////////*/
 
 /*////////////////// horizontal rules //////////////////////*/
 
